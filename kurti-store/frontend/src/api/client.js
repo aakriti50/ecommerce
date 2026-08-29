@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://kurti-store-backend.onrender.com/api",
+  baseURL: "https://kurti-store-backend.onrender.com/api",
 });
 
 api.interceptors.request.use((config) => {
